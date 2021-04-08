@@ -1,0 +1,415 @@
+#information .circles{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+}
+
+.inner_text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.field_text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.field_text>div>p,
+.inner_text>*{
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.field_text p,
+.inner_text>p{
+    color: #eee;
+    text-align: center;
+    width: 280px;
+    word-break: keep-all;
+}
+.upper_f,
+.inner_text>p.upper{
+    font-size: 36px;
+    font-weight: 100;
+    position: absolute;
+    top: 40%;
+}
+.inner_text>span.after{
+    display: block;
+    width: 180px;
+    height: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    top: 52%;
+/*    top: 48%;*/
+    filter: blur(.8px);
+}
+
+.lower_f,
+.inner_text>p.lower{
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+}
+.upper_f{
+/*    top: 32%;*/
+    top: 28%;
+    display: none;
+}
+.lower_f{
+    top: 52%;
+/*    top: 48%;*/
+    display: none;
+}
+
+.deco{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.deco>div>div{
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.deco>.m_circles>div{
+    top: 50%;
+    left: 50%;
+    filter: blur(.8px);
+    box-shadow: 5px 5px rgba(66, 251, 203, 0.01);
+}
+.deco>.m_circles>div.tr{
+    border-top: 3px solid rgba(255,255,255,.4);
+    border-right: 1px solid rgba(255,255,255,.4);
+}
+.deco>.m_circles>div.bl{
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    border-left: 3px solid rgba(255,255,255,.4);
+}
+
+.deco .m1{
+    width: 490px;
+    height: 490px;
+    animation: 5s rotation2 1s infinite;
+}
+.deco .m2{
+    width: 490px;
+    height: 490px;
+    animation: 10s rotation2 infinite;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.deco .m3{
+    width: 490px;
+    height: 490px;
+    animation: 12s rotation infinite;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+.deco .m4{
+    width: 490px;
+    height: 490px;
+    animation: 4s rotation3 infinite;
+}
+.deco .m5{
+    width: 483px;
+    height: 483px;
+    animation: 12s rotation3 .2s infinite;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.deco .m6{
+    width: 482px;
+    height: 482px;
+    animation: 3s rotation .5s infinite;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.deco .m7{
+    width: 487px;
+    height: 487px;
+    animation: 2s rotation3 .25s infinite;
+    margin-left: 3px;
+    margin-top: -6px;
+}
+.deco .m8{
+    width: 484px;
+    height: 484px;
+    animation: 3s rotation infinite;
+    margin-left: -6px;
+    margin-top: -4px;
+}
+.deco .m9{
+    width: 482px;
+    height: 482px;
+    animation: 6s rotation2 .5s infinite;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.deco .m10{
+    width: 486px;
+    height: 486px;
+    animation: 4s rotation3 .5s infinite;
+    margin-left: -3px;
+    margin-top: -8px;
+}
+
+.deco>.c_circles>div{
+    transition: .3s;
+}
+.deco .c1{
+    right: 80px;
+    top: 100px;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255,255,255,.2);
+    animation: 2s circle_opacity3 .5s infinite;
+    transform-origin: 300px 300px;
+    filter: blur(2px);
+}
+.deco .c2{
+    right: 310px;
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    border-left: 1px solid rgba(255,255,255,.5);
+    border-top: 1px solid rgba(255,255,255,.6);
+    animation: 3s circle_opacity2 infinite;
+    filter: blur(5px);
+}
+.deco .c3{
+    right: 220px;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(232, 243, 255, .1);
+    animation: 3s circle_opacity infinite ease;
+    filter: blur(5px);
+}
+.deco .c4{
+    right: 160px;
+    top: 560px;
+    width: 126px;
+    height: 126px;
+    border: 1px solid rgba(255,255,255,.3);
+    animation: 4s circle_opacity2 infinite ease;
+    filter: blur(5px);
+}
+.deco .c5{
+    right: 200px;
+    top: 540px;
+    width: 162px;
+    height: 16px;
+    background-color: rgba(255,255,255,.4);
+    animation: 2s bounce infinite, 4s circle_opacity infinite;
+    filter: blur(10px);
+}
+.deco .c6{
+    width: 27px;
+    height: 10px;
+    background-color: rgba(255,255,255,.6);
+    right: 180px;
+    top: 80px;
+    animation: 2s bounce infinite, 4s circle_opacity infinite;
+    filter: blur(5px)
+}
+.deco .c7{
+    width: 102px;
+    height: 30px;
+    background-color: rgba(255, 255, 183, 0.5);
+    left: 160px;
+    top: 501px;
+    transform: skewY(20deg);
+    filter: blur(25px);
+    animation: 2s bounce infinite, 4s circle_opacity infinite;
+}
+.deco .c8{
+    width: 120px;
+    height: 20px;
+    background-color: rgba(255, 169, 169, 0.64);
+    top: 120px;
+    left: 60px;
+    transform: skewY(-40deg);
+    animation: 1s bounce infinite, 3s circle_opacity3 infinite;
+    filter: blur(15px);
+}
+.deco .c9{
+    right: 26px;
+    top: -24px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.62);
+    transform: skewX(20deg);
+    animation: 2s bounce infinite, 2s circle_opacity infinite;
+    filter: blur(18px);
+}
+.deco .c10{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    left: 100px;
+    bottom: 120px;
+    animation: 2s circle_opacity2 infinite;
+    transform: skew(20deg);
+    filter: blur(15px);
+}
+.deco .c11{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(166, 255, 225, 0.53);
+    left: 100px;
+    bottom: 120px;
+    animation: 3s circle_opacity infinite;
+    transform: skewY(20deg);
+    filter: blur(6px)
+}
+.deco .c12{
+    width: 1200px;
+    height: 80px;
+    background-color: rgba(255, 211, 211, 0.6);
+    transform: skewY(40deg);
+    right: 20px;
+    filter: blur(140px);
+    animation: 1s bounce infinite, 3s circle_opacity3 infinite;
+}
+.deco .c13{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: skewY(-40deg);
+    right: 310px;
+    top: 120px;
+    filter: blur(40px);
+    animation: 1s bounce infinite, 3s circle_opacity3 infinite;
+}
+.deco .c14{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(116, 221, 255, 0.48);
+    left: 0;
+    bottom: 80px;
+    filter: blur(30px);
+    animation: 1s bounce infinite, 3s circle_opacity3 infinite;
+}
+.deco .c15{
+    width: 1000px;
+    height: 80px;
+    background-color: rgba(24, 172, 255, 0.6);
+    transform: skewY(40deg);
+    right: 20px;
+    animation: 2s bounce infinite, 2s circle_opacity3 infinite;
+    filter: blur(140px);
+}
+.deco .c16{
+    width: 1000px;
+    height: 40px;
+    background-color: rgba(255, 80, 80, 0.6);
+    transform: skewY(40deg);
+    right: 20px;
+    animation: 1s bounce infinite, 2s circle_opacity3 infinite;
+    filter: blur(140px);
+}
+.deco .c17{
+    width: 120px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.34);
+    transform: skewY(50deg);
+    top: 120px;
+    left: 60px;
+    animation: 2s circle_opacity3 infinite;
+    filter: blur(4px);
+}
+.deco .c18{
+    width: 100px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.43);
+    transform: skewY(-40deg);
+    top: 130px;
+    left: 70px;
+    animation: 2s circle_opacity infinite;
+    filter: blur(5px);
+}
+.deco .c19{
+    width: 10px;
+    height: 120px;
+    background-color: rgba(4, 223, 255, 0.62);
+    left: 50px;
+    bottom: 200px;
+    transform: skewX(10deg);
+    animation: 1s bounce infinite, 2s circle_opacity3 infinite;
+    filter: blur(10px);
+}
+.deco .c20{
+    width: 400px;
+    height: 20px;
+    background-color: rgba(252, 255, 0, 0.41);
+    transform: skewY(20deg);
+    right: 20px;
+    top: 60px;
+    animation: 1s bounce infinite, 2s circle_opacity3 infinite;
+    filter: blur(20px);
+}
+
+@keyframes rotation {
+    0%{
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+    0.01%{
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+@keyframes rotation2 {
+    0%{
+        transform: translate(-50%, -50%) rotate(360deg);        
+    }
+    0.001%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+@keyframes rotation3 {
+    0%{
+        transform: translate(-50%, -50%) rotate(-360deg);        
+    }
+    0.01%{
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes circle_opacity {
+    0%{opacity: 0.1}
+    50%{opacity: 0.8}
+    100%{opacity: 0.1}
+}
+@keyframes circle_opacity2 {
+    0%{opacity: 0.2}
+    50%{opacity: 0.6}
+    100%{opacity: 0.2}
+}
+@keyframes circle_opacity3 {
+    0%{opacity: 0.1}
+    50%{opacity: 0.5}
+    100%{opacity: 0.1}
+}
+
+@keyframes bounce{
+    0%{margin-top: 0;}
+    50%{margin-top: -4px;}
+    100%{margin-top: 0px;}
+}

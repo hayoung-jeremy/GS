@@ -1,0 +1,75 @@
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,dd,dt,form,fieldset,button,input,*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body,input,button{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+img,fieldset,iframe{
+    border: 0 none;
+    padding: 0
+}
+
+img {
+    vertical-align: top
+}
+
+label,
+button {
+    cursor: pointer
+}
+
+i,em,address{
+    font-style: normal;
+}
+.blind{
+    position: absolute;
+    top: -9999999px;
+}
+hr{
+    display: none;
+}
+
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+
+
+/*-----------skip-----------*/
+.skip a{
+    position: absolute;
+    top: -9999px;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    background-color: rgba(50, 203, 255, 0.8);
+    font-size: 16px;    
+    color: #eee;
+    line-height: 60px;
+    text-align: center;
+}
+
+.skip a:hover,
+.skip a:active,
+.skip a:focus {
+    top: 0;
+}
+
+
+/*--------style_common----------*/
+
